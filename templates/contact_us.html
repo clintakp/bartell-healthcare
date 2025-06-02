@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="wrapper">
+    <section class="contact-us-section py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="text-center mb-4 fw-bold">Call to Book Your Appointment</h2>
+                    <p class="lead text-center mb-4" style="font-weight: 400;">
+                        We look forward to helping you feel your best. To schedule an appointment, please call our clinic directly. Our team will confirm availability and assist you with booking.
+                    </p>
+
+                    <div class="container-fluid">  <!-- Wider container -->
+                        <div class="d-flex justify-content-center">  <!-- Center the column -->
+                            <div class="col-md-8 col-lg-6 mb-4">  <!-- Wider card on medium+ screens -->
+                                <div class="card shadow-sm h-100 border-0">
+                                    <div class="card-body text-center">  <!-- Optional: center text too -->
+                                        <h5 class="card-title fw-semibold">
+                                            <i class="bi bi-geo-alt-fill me-2 text-danger"></i>Visit Us
+                                        </h5>
+                                        <p class="card-text">1001 SOUTH MARKET STREET,<br>SUITE A, MECHANICSBURG, PA 17055</p>
+                                        <p class="text-muted">Free onsite parking available.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="text-center mt-4">
+                        <p class="fs-5">For all appointments and inquiries, please call us. Walk-ins are welcome, but calling ahead is highly recommended.</p>
+                        <a href="tel:+17176978030" class="btn btn-lg btn-primary mt-3 px-4">
+                            <i class="bi bi-telephone-inbound me-2"></i> Call Now to Book
+                        </a>
+                    </div>
+
+                    <p class="text-center text-muted fst-italic mt-5">
+                        Your health is our priority — let us help you get back on track.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

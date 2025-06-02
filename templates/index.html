@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{%block content %}
+
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section class="hero-section position-relative text-black text-center">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="video-bg">
+      <source src="{% static 'img/hero-video.mp4' %}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  
+    <div class="hero-overlay"></div>
+    <div class="container d-flex align-items-center justify-content-center flex-column h-100">
+      <h1 class="fw-bold display-4" style="color: white">Experience Expert Chiropractic Care</h1>
+      <h3 class="btn btn-primary">Book an Appointment</h3>
+    </div>
+</section>  
+
+<!-- Intro Section -->
+<section id="Intro" class="text-center py-5">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <!-- Left Side: Text Content -->
+            <div class="col-md-6 text-justify">
+                <h2 class="fw-bold">Drs. Michael & Sherrie Bartell</h2>
+                <p>
+                    Our multidisciplinary, integrated approach to patient care is directed toward balancing biomechanics and promoting good health. Our main focus is diagnosis and conservative care of spine-related disorders and other painful joint issues. To this end, we integrate traditional manual adjustive techniques and soft-tissue therapies to decrease pain, increase movement, and improve performance.
+                </p>
+                <p><strong>Are You Able to...</strong><br>
+                    Move Freely? Manage your Stress? Live to your fullest potential?
+                </p>
+                <p><strong>Would You like to...</strong><br>
+                    Have less pain? Increase your energy? Recover faster from activity? Sleep better?
+                </p>
+                <p>Call our office at <a href="tel:7176978030" class="text-success fw-bold">717-697-8030</a> for an appointment today!</p>
+            </div>
+
+            <!-- Right Side: Image -->
+            <div class="col-md-4">
+                <img src="{% static 'img/thebartells.jpg' %}" alt="Drs. Michael & Sherrie Bartell" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-5 text-center" style="background-color: rgb(243, 243, 243);">
+    <div class="container">
+        <h2 class="fw-bold mb-4">Our Services</h2>
+        <div class="row g-4">
+            <!-- First Row -->
+            <div class="col-md-3">
+                <img src="{% static 'img/MATs.jpeg' %}" class="img-fluid rounded" alt="Manual Adjustive Techniques">
+                <h5 class="mt-3">Manual Adjustive Techniques</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="{% static 'img/SDs.jpeg' %}" class="img-fluid rounded" alt="Spinal Decompression">
+                <h5 class="mt-3">Cox Flexion-Distraction</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="{% static 'img/CLETs.jpeg' %}" class="img-fluid rounded" alt="Cold Laser Therapy">
+                <h5 class="mt-3">Cold Laser (Erchonia)</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="{% static 'img/COs.jpeg' %}" class="img-fluid rounded" alt="Custom Functional Orthotics">
+                <h5 class="mt-3">Custom Functional Orthotics</h5>
+            </div>
+
+            <!-- Second Row -->
+            <div class="col-md-3">
+                <img src="{% static 'img/EFs.jpeg' %}" class="img-fluid rounded" alt="Exercise and Fitness Protocols">
+                <h5 class="mt-3">Exercise & Fitness Protocols</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="{% static 'img/MFRT.jpeg' %}" class="img-fluid rounded" alt="Myofascial Release">
+                <h5 class="mt-3">Myofascial Release</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="{% static 'img/EMS.jpeg' %}" class="img-fluid rounded" alt="Electrical Muscle Stimulation">
+                <h5 class="mt-3">Electrical Muscle Stimulation</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="{% static 'img/UTs.jpeg' %}" class="img-fluid rounded" alt="Ultrasound Therapy">
+                <h5 class="mt-3">Ultrasound Therapy</h5>
+            </div>
+        </div>
+
+        <!-- View All Services Button -->
+        <div class="mt-4">
+            <a href="#" class="btn btn-primary px-4 py-2">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Standard Office Hours Section -->
+<section id="office-hours" class="py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-4"> Office Hours</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover shadow-lg">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Opening Time</th>
+                        <th scope="col">Closing Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>9:00 AM</td>
+                        <td>6:00 PM</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>Saturday</td>
+                        <td>9:00 AM</td>
+                        <td>2:00 PM</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Sunday</td>
+                        <td colspan="2">Closed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

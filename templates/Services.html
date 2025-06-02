@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="wrapper">
+    <section id="services-page" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="text-center fw-bold mb-4">Our Services</h2>
+
+                    <p class="lead text-center">
+                        We specialize in comprehensive chiropractic care with a multidisciplinary, integrated approach.
+                        Our focus is on diagnosing and treating spine-related disorders and painful joint issues.
+                        By combining traditional manual techniques with advanced therapies, we aim to decrease pain, improve movement, and enhance overall well-being.
+                    </p>
+
+                    <div class="alert alert-info text-center mt-3">
+                        <i class="bi bi-check-circle-fill"></i> <strong>We accept most health plans, personal injury, and workers' compensation cases.</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="row g-4 mt-5">
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/MATs.jpg' %}" class="img-fluid rounded" alt="Manual Adjustive Techniques">
+                    <h5 class="mt-3">Manual Adjustive Techniques</h5>
+                    <p>Traditional hands-on chiropractic adjustments to restore proper alignment and relieve pain.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/SDs.jpeg' %}" class="img-fluid rounded" alt="Spinal Decompression">
+                    <h5 class="mt-3">Cox Flexion-Distraction</h5>
+                    <p>Gentle, non-invasive spinal decompression to alleviate pressure on discs and nerves.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/CLETs.jpg' %}" class="img-fluid rounded" alt="Cold Laser Therapy">
+                    <h5 class="mt-3">Cold Laser (Erchonia)</h5>
+                    <p>Low-level laser therapy to reduce inflammation, promote healing, and relieve pain.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/COs.jpeg' %}" class="img-fluid rounded" alt="Custom Functional Orthotics">
+                    <h5 class="mt-3">Custom Functional Orthotics</h5>
+                    <p>Custom foot levelers designed to correct imbalances and improve posture.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/EFs.jpeg' %}" class="img-fluid rounded" alt="Exercise and Fitness Protocols">
+                    <h5 class="mt-3">Exercise & Fitness Protocols</h5>
+                    <p>Personalized fitness programs to enhance mobility, strength, and overall health.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/MFRT.jpg' %}" class="img-fluid rounded" alt="Myofascial Release">
+                    <h5 class="mt-3">Myofascial Release</h5>
+                    <p>Soft tissue therapy to relieve pain and restore muscle function.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/EMS.jpg' %}" class="img-fluid rounded" alt="Electrical Muscle Stimulation">
+                    <h5 class="mt-3">Electrical Muscle Stimulation</h5>
+                    <p>Electrotherapy to reduce muscle pain, inflammation, and spasms.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/UTs.jpg' %}" class="img-fluid rounded" alt="Ultrasound Therapy">
+                    <h5 class="mt-3">Ultrasound Therapy</h5>
+                    <p>Deep heat therapy to accelerate healing of soft tissues and muscles.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/Scoliosis.jpg' %}" class="img-fluid rounded" alt="Scoliosis Treatment">
+                    <h5 class="mt-3">Scoliosis Treatment</h5>
+                    <p>Non-restrictive, zero-bracing techniques to correct spinal curvature.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/TATs.jpg' %}" class="img-fluid rounded" alt="Therapeutic Aroma Touch">
+                    <h5 class="mt-3">Therapeutic Aroma Touch</h5>
+                    <p>Essential oil therapy to enhance relaxation and promote healing.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="{% static 'img/XRs.jpeg' %}" class="img-fluid rounded" alt="Onsite Diagnostic Radiology">
+                    <h5 class="mt-3">Onsite Diagnostic Radiology</h5>
+                    <p>Fast, accurate diagnostic imaging with results available within minutes.</p>
+                </div>
+            </div>
+
+            <!-- Doctor's Profile -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8 text-center">
+                    <h3 class="fw-bold">Meet Our Doctor</h3>
+                    <img src="{% static 'img/servicepageimg.jpg' %}" class="img-fluid rounded-circle mt-3" alt="Doctor's Image" style="width: 200px; height: 200px; object-fit: cover;">
+                    <p class="lead mt-3">
+                        <strong>Dr. Michael J Bartell D.C.</strong> is dedicated to providing high-quality chiropractic care. With years of experience, he specializes in spinal health, pain relief, and holistic wellness.
+                        His mission is to help patients achieve a pain-free life through personalized treatment plans.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-4">
+                <a href="contact_us" class="btn btn-primary px-4 py-2">Schedule an Appointment</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
