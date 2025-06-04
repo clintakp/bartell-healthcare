@@ -1,1 +1,1 @@
-This is the upgraded version of the Bartell Healthcare Center website, built using Django, Bootstrap 5, and responsive HTML/CSS. It features a clean layout, proper branding, and a scalable structure for future improvements like appointment booking, testimonials, and contact forms. The project demonstrates my ability to build real-world, maintainable web applications and is fully deployed for now on Render for live access. It remains open for feature upgrades, with a strong foundation for both frontend and backend enhancements.
+
